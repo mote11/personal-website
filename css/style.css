@@ -1,0 +1,278 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+li {
+	list-style: none;
+}
+
+em,
+i {
+	font-style: normal;
+}
+
+img {
+	vertical-align: middle;
+}
+
+/* 背景图片 */
+#fullpage .section {
+	background-size: cover;
+}
+
+#fullpage .section:nth-child(1) {
+	/* background: url('../img/bg1.jpg') no-repeat; */
+	background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
+}
+
+#fullpage .section:nth-child(2) {
+	/* background: url('../img/bg2.jpg') no-repeat; */
+	background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+}
+
+#fullpage .section:nth-child(3) {
+	/* background: url('../img/bg3.jpg') no-repeat; */
+	background-image: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%);
+}
+
+#fullpage .section:nth-child(4) {
+	/* background: url('../img/bg4.jpg') no-repeat; */
+	background-image: linear-gradient(to top, #ebc0fd 0%, #d9ded8 100%);
+}
+
+#fullpage .section:nth-child(5) {
+	/* background: url('../img/bg4.jpg') no-repeat; */
+	background-image: linear-gradient(-20deg, #dcb0ed 0%, #99c99c 100%);
+}
+
+
+.background-container2 {
+	position: relative;
+	background-color: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+	/* 与页面背景颜色相同 */
+}
+
+.background-container2 svg {
+	width: 100%;
+	height: 100%;
+}
+
+
+
+/* 小圆点颜色 */
+#fp-nav ul li a span {
+	background: #fff;
+}
+
+#menu {
+	position: fixed;
+	right: 100px;
+	top: 50%;
+	width: 100px;
+	transform: translateY(-50%);
+	z-index: 10;
+}
+
+#menu li {
+	margin-bottom: 20px;
+	font-size: 20px;
+}
+
+#menu li a {
+	display: block;
+	width: 100px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	color: #fff;
+}
+
+#menu .active a {
+	background-color: #f00;
+	border-radius: 20px;
+}
+
+/* 确认版心 */
+/* 公用样式 */
+.w {
+	width: 1000px;
+	margin: auto;
+}
+
+
+
+.fl {
+	float: left;
+}
+
+.fr {
+	float: right;
+}
+
+#fullpage .section:nth-child(2) .poh{
+	position: relative;
+	width: 200px;
+	height: 250px;
+	border: 2px #f00 solid;
+}
+
+#fullpage .section:nth-child(2) .poh img {
+	position: absolute;
+	left: 30px;
+	top: 30px;
+	width: 100%;
+	height: 100%;
+}
+
+#fullpage .section:nth-child(2) .txt {
+	width: 710px;
+	height: 350px;
+	padding: 30px;
+	color: #fff;
+	border-radius: 20px;
+	background: rgba(0, 0, 0, 0.5);
+	box-sizing: border-box;
+}
+
+
+#fullpage .section:nth-child(2) .txt p {
+	text-indent: 2em;  /* 首行缩进两个字符 */
+	line-height: 30px;
+}
+
+
+#fullpage .section:nth-child(3) .por {
+	color: #fff;
+	text-align: center;
+}
+
+#fullpage .section:nth-child(3) .por h3 {
+	margin: 20px auto;
+	font-size: 35px;
+}
+
+#fullpage .section:nth-child(3) .por p {
+	margin: 50px 0;
+	font-size: 20px;
+}
+
+#fullpage .section:nth-child(3) .por li {
+	display: inline-block;
+	margin: 0 20px;
+}
+
+#fullpage .section:nth-child(3) .por li img {
+	width: 55px;
+	height: 55px;
+	display: block;
+	margin-bottom: 15px;
+}
+
+.slide {
+	text-align: center;
+}
+
+
+
+/* 个人经历 */
+#fullpage .section:nth-child(4) li {
+	float: left;
+	width: 250px;
+	margin: 0 15px;
+	background: #fff;
+	text-align: center;
+	border: 5px #fff solid;
+}
+
+#fullpage .section:nth-child(4) li img {
+	width: 100%;
+}
+
+#fullpage .section:nth-child(4) li h3 {
+	line-height: 60px;
+	color: #333;
+}
+#fullpage .section:nth-child(4) .zp {
+	width: 876px;
+	margin: 30px auto 0;
+}
+
+.fp-prev,.fp-next{
+	position: absolute;
+	width: 34px !important;
+	height: 55px !important;
+	border: none !important;
+}
+
+.fp-prev {
+	left: 20px;
+	background: url('../img/左.png');
+}
+
+.fp-next {
+	right:20px;
+	background: url('../img/右.png');
+}
+
+#fullpage .section:nth-child(5) {
+	text-align: center;
+}
+
+#fullpage .section:nth-child(5) img {
+	width: 200px;
+	height: 200px;
+	border-radius: 20px;
+}
+
+#fullpage .section:nth-child(5) .line,.list {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 5px;
+	height: 300px;
+	background-color: #fff;
+}
+
+#fullpage .section:nth-child(5) .list img {
+	width: 50px;
+	height: 50px;
+}
+
+#fullpage .section:nth-child(5) .list div:nth-child(1){
+	position: absolute;
+	top: 30px;
+	left: 10px;
+	width: 300px;
+	height: 80px;
+	line-height: 80px;
+}
+
+#fullpage .section:nth-child(5) .list div {
+	font-size: 20px;
+	color: #fff;
+	font-weight: 700;
+}
+
+
+#fullpage .section:nth-child(5) .list div:nth-child(2){
+	position: absolute;
+	top: 120px;
+	left: -200px;
+	width: 200px;
+	height: 80px;
+	line-height: 80px;
+}
+
+#fullpage .section:nth-child(5) .list div:nth-child(3){
+	position: absolute;
+	top: 180px;
+	left: 10px;
+	width: 200px;
+	height: 80px;
+	line-height: 80px;
+}
